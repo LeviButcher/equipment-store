@@ -27,6 +27,7 @@ export default function RootLayout({
   );
 }
 
+// TODO get tailwind library to optional apply tailwind class withinwhen pathname is matched
 function SideNav() {
   return (
     <aside className="overflow-hidden p-4 w-64 h-full bg-gray-400">
@@ -37,10 +38,10 @@ function SideNav() {
         >
           EquipmentStore
         </Link>
-        <Link className="text-lg rounded hover:bg-blue-200" href="locations">
+        <Link className="text-lg rounded hover:bg-blue-200" href="/locations">
           Locations
         </Link>
-        <Link className="text-lg rounded hover:bg-blue-200" href="settings">
+        <Link className="text-lg rounded hover:bg-blue-200" href="/settings">
           Settings
         </Link>
       </nav>
