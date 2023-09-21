@@ -22,6 +22,41 @@
       "when": 1695082331678,
       "tag": "0002_right_fantastic_four",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1695253134253,
+      "tag": "0003_light_mysterio",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1695253206531,
+      "tag": "0004_careful_brood",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1695253386680,
+      "tag": "0005_thick_power_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "5",
+      "when": 1695254021710,
+      "tag": "0006_dark_ink",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "5",
+      "when": 1695257008252,
+      "tag": "0007_wet_stephen_strange",
+      "breakpoints": true
     }
   ]
 }

@@ -1,3 +1,4 @@
+import { Box } from "lucide-react";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -32,6 +33,9 @@ function SideNav() {
   return (
     <aside className="overflow-hidden p-4 w-64 h-full bg-gray-400">
       <nav className="flex flex-col flex-wrap gap-4 items-stretch text-center">
+        <div>
+          <Box size={48} className="inline" />
+        </div>
         <Link
           className="mb-2 font-mono text-lg rounded hover:bg-blue-200"
           href="/"
