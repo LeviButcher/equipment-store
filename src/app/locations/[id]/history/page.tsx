@@ -1,6 +1,8 @@
 import { db } from "@/db";
 import { locationHistories } from "@/db/schema";
 import { eq } from "drizzle-orm";
+import { DataTable } from "../../data-table";
+import { locationHistoryColumns } from "../../locationColumns";
 
 const getHistory = (id: number) => {
   return db
@@ -13,18 +15,14 @@ type Params = {
   id: number;
 };
 
-import "ag-grid-community/styles/ag-grid.css";
-import "ag-grid-community/styles/ag-theme-alpine.css";
-
-import LocationHistoryTable from "../../LocationHistoryTable";
-
 export default async function History({ params }: { params: Params }) {
   const res = await getHistory(params.id);
+
   return (
     <div>
       <h1>history - {res.length}</h1>
-      <div className="mb-4 w-auto h-96 ag-theme-alpine">
-        <LocationHistoryTable history={res} />
+      <div className="mb-4 w-auto h-96">
+        <DataTable data={res} columns={locationHistoryColumns} />
       </div>
     </div>
   );

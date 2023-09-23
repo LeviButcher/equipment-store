@@ -478,6 +478,18 @@
   dependencies:
     tslib "^2.4.0"
 
+"@tanstack/react-table@^8.10.1":
+  version "8.10.1"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-table/-/react-table-8.10.1.tgz#f3e7d6e3f82dd43947e8893617a3c50e9e3fa383"
+  integrity sha512-pD58vH5ahZv1qzAK9Xl87A5dydBnKiDGdyEsd5VK2bG2wGRbfbpBfH915KdUv+8XqabDQgUo8nU8qHBEQv1qvg==
+  dependencies:
+    "@tanstack/table-core" "8.10.1"
+
+"@tanstack/table-core@8.10.1":
+  version "8.10.1"
+  resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.10.1.tgz#04bd980fad9f3205840449c6ed16553c35ed48c9"
+  integrity sha512-dvO7wz+WjnT+7KI6ZZ+GAe9tljIFResDaV/TfOhfpeTB0ud9pILsavuM22HAXG2NsVaIG2Zax2OaVIsNt0z7Og==
+
 "@types/json5@^0.0.29":
   version "0.0.29"
   resolved "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
@@ -568,18 +580,6 @@ acorn@^8.9.0:
   version "8.10.0"
   resolved "https://registry.npmjs.org/acorn/-/acorn-8.10.0.tgz"
   integrity sha512-F0SAmZ8iUtS//m8DmCTA0jlh6TDKkHQyK6xc6V4KDTyZKA9dnvX9/3sRTVQrWm79glUAZbnmmNcdYwUIHWVybw==
-
-ag-grid-community@^30.1.0:
-  version "30.1.0"
-  resolved "https://registry.yarnpkg.com/ag-grid-community/-/ag-grid-community-30.1.0.tgz#50c532df2e6cc22596300b801651eca76459a189"
-  integrity sha512-D69e63CUALxfgLZSu1rXC8Xiyhu6+17zxzTV8cWsyvt5GeSDv2frQ3BKOqGZbUfVoOCLv2SQoHVTTqw8OjxavA==
-
-ag-grid-react@^30.1.0:
-  version "30.1.0"
-  resolved "https://registry.yarnpkg.com/ag-grid-react/-/ag-grid-react-30.1.0.tgz#9b45b6d9115a0d8a278c112ab1fd2a9d378f26a2"
-  integrity sha512-qnJAWe2yN4fjnFYiyzQu6S3EX0rZVvrZbkTEXVEy55pufTkcmimvCtKSV1aVxGg+TeZFJBw0gkXfXW4aMwTh4Q==
-  dependencies:
-    prop-types "^15.8.1"
 
 ajv@^6.12.4:
   version "6.12.6"
