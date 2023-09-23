@@ -1,10 +1,9 @@
-import { drizzle } from "drizzle-orm/postgres-js";
-import { migrate } from "drizzle-orm/postgres-js/migrator";
-import postgres from "postgres";
+import { drizzle } from "drizzle-orm/vercel-postgres";
+import { migrate } from "drizzle-orm/vercel-postgres/migrator";
+import { sql } from "@vercel/postgres";
 import { users, locations, Location, User, NewUser } from "@/db/schema";
 
-const client = postgres(process.env.DB_CS ?? "");
-export const db = drizzle(client, { schema: { users, locations } });
+export const db = drizzle(sql, { schema: { users, locations } });
 
 export { users, locations };
 export type { Location, User, NewUser };
