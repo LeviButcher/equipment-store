@@ -8,4 +8,4 @@ export const db = drizzle(sql, { schema: { users, locations } });
 export { users, locations };
 export type { Location, User, NewUser };
 
-await migrate(db, { migrationsFolder: "drizzle" });
+// await migrate(db, { migrationsFolder: "drizzle" });
