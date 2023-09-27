@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
+import { NavLink } from "./nav-link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,7 +29,6 @@ export default function RootLayout({
   );
 }
 
-// TODO get tailwind library to optional apply tailwind class withinwhen pathname is matched
 function SideNav() {
   return (
     <aside className="overflow-hidden p-4 w-64 h-full bg-gray-400">
@@ -42,12 +42,8 @@ function SideNav() {
         >
           EquipmentStore
         </Link>
-        <Link className="text-lg rounded hover:bg-blue-200" href="/locations">
-          Locations
-        </Link>
-        <Link className="text-lg rounded hover:bg-blue-200" href="/settings">
-          Settings
-        </Link>
+        <NavLink href="/locations">Locations</NavLink>
+        <NavLink href="/settings">Settings</NavLink>
       </nav>
     </aside>
   );

@@ -1,5 +1,6 @@
 import React from "react";
+import { FullSpinner } from "@/components/ui/loadingSpinner";
 
 export default function Loading() {
-  return <div className="text-red-700">Loading...</div>;
+  return <FullSpinner />;
 }
