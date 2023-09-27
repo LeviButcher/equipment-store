@@ -1,11 +1,11 @@
 import { Box } from "lucide-react";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Asap } from "next/font/google";
 import Link from "next/link";
 import { NavLink } from "./nav-link";
 
-const inter = Inter({ subsets: ["latin"] });
+const asap = Asap({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={asap.className}>
         <div className="grid grid-cols-[auto,1fr] h-screen">
           <SideNav />
           <div className="p-4">{children}</div>
