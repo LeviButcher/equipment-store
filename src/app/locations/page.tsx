@@ -2,8 +2,7 @@ import { db } from "@/db/index";
 import { locations } from "@/db/schema";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { DataTable } from "./data-table";
-import { locationColumns } from "./locationColumns";
+import LocationTable from "./location-table";
 
 const getLocations = () => {
   return db.select().from(locations);
@@ -21,7 +20,7 @@ export default async function Locations() {
         </Button>
       </header>
       <div className="mb-4 w-auto h-96">
-        <DataTable data={locations} columns={locationColumns} />
+        <LocationTable locations={locations} />
       </div>
     </main>
   );

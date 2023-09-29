@@ -2,6 +2,7 @@
 
 import {
   ColumnDef,
+  Row,
   SortingState,
   flexRender,
   getCoreRowModel,
@@ -23,11 +24,15 @@ import { useState } from "react";
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
+  onRowClick?: (x: Row<TData>) => void;
+  onRowDoubleClick?: (x: Row<TData>) => void;
 }
 
 export function DataTable<TData, TValue>({
   columns,
   data,
+  onRowClick,
+  onRowDoubleClick,
 }: DataTableProps<TData, TValue>) {
   const [sorting] = useState<SortingState>([]);
   const table = useReactTable({
@@ -68,6 +73,8 @@ export function DataTable<TData, TValue>({
               <TableRow
                 key={row.id}
                 data-state={row.getIsSelected() && "selected"}
+                onClick={() => onRowClick && onRowClick(row)}
+                onDoubleClick={() => onRowDoubleClick && onRowDoubleClick(row)}
               >
                 {row.getVisibleCells().map((cell) => (
                   <TableCell key={cell.id}>

@@ -1,7 +1,7 @@
 import { db } from "@/db";
 import { locationHistories } from "@/db/schema";
 import { eq } from "drizzle-orm";
-import { DataTable } from "../../data-table";
+import { DataTable } from "@/components/table/data-table";
 import { locationHistoryColumns } from "../../locationColumns";
 
 const getHistory = (id: number) => {
